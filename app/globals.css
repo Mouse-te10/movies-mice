@@ -2,6 +2,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
+  
 }
 
 .header-logo {
@@ -81,6 +82,7 @@ main {
   position: relative;
   justify-content: space-around;
   row-gap: 60px;
+  padding-bottom: 100px;
 }
 
 main h1 {
@@ -90,6 +92,11 @@ main h1 {
   font-size: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+main h4 {
+  position: absolute;
+  bottom: 0;
 }
 
 .movie-item {
@@ -143,4 +150,19 @@ main h1 {
   font-weight: bold;
   position: relative;
   top: -10px;
+}
+
+footer {
+  color: white;
+  height: 100px;
+  width: 80vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 20px;
+  font-family: sans-serif;
 }
