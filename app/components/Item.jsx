@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Item = ({item}) => {
@@ -8,7 +9,7 @@ const Item = ({item}) => {
                     <b>{item.rating}⭐</b>
                     <p>{item.description}</p>
                     <p className='movie-duration'>{item.duration} минут</p>
-                    <button>Подробнее</button>
+                    <Link href={'../about/' + item.id}>Подробнее</Link>
                 </div>
            )
 }

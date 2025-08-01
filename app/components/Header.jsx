@@ -13,7 +13,7 @@ const Header = () => {
             <Link href="/" className={pathname === '/' ? 'active' : ''}>Фильмы</Link>
             <Link href="/serials" className={pathname === '/serials' ? 'active' : ''}>Сериалы</Link>
         </nav>
-        <Link className='header-button' href='/'>Github</Link>
+        <Link className='header-button' href='https://github.com/Mouse-te10' target="_blank">Github</Link>
     </header>
   )
 }

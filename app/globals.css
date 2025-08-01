@@ -127,7 +127,7 @@ main h4 {
   color: rgb(255, 183, 0);
   left: 10px;
 }
-.movie-item button {
+.movie-item a {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -136,8 +136,16 @@ main h4 {
   padding: 10px 20px;
   font-weight: bold;
   border: 0;
+  text-decoration: none;
+  font-weight: 400;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+.movie-item button:hover {
+  background-color: #ff000dc3;
+}
+
 .movie-item p {
   margin-bottom: 30px;
   margin-top: 20px;
@@ -165,4 +173,107 @@ footer {
 footer p {
   font-size: 20px;
   font-family: sans-serif;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer nav {
+  text-align: right;
+  position: absolute;
+  right: 20px;
+}
+
+.about-serial .imgAbout{
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 32vw;
+    border-right: dashed white;
+}
+.about-serial div {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 32.1vw;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.about-serial--block h2 {
+  color: white;
+  position: relative;
+  top: 600px;
+  left: 150px;
+}
+.about-serial--block .comment {
+  height: 100px;
+  width: 60vw;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  margin-block: 10px;
+  top: 600px;
+  left: 70px;
+  padding: 0;
+}
+
+.nameUser, .commentUser {
+  position: relative;
+  top: -50px;
+  margin: 0;
+}
+
+.nameUser {
+  left: 100px;
+  margin-bottom: 10px;
+}
+
+.imageUser {
+  width: 60px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+.about-serial div .strelka {
+  filter: invert(100%);
+  width: 70px;
+  position: fixed;
+  top: 10px;
+  left: 670px;
+  z-index: 2000;
+}
+.strelka-img {
+  width: 70px;
+}
+
+.about-serial div video {
+    width: 60vw;
+    position: absolute;
+    left: 70px;
+}
+
+.about-serial div h1 {
+  text-align: center;
+  color: red;
+}
+.about-serial div p {
+  margin-left: 100px;
+}
+
+.logoSVG {
+  position: fixed;
+  top: -10px;
+  right: -10px;
+  z-index: 1000;
 }
